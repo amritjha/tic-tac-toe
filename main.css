@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway|Lobster");
+
+body {
+	background-color: rgba(30, 30, 30);
+	text-align: center;
+	transition: all 300ms;
+}
+
+.app-container {
+	background-color: rgba(250, 250, 250);
+	margin: 200px auto;
+	border-radius: 5px;
+	min-height: 300px;
+	min-width: 300px;
+	max-width: 500px;
+	transition: all 300ms;
+}
+
+.init-div, .mode-div, .symbol-div {
+	padding: 60px; 
+}
+
+
+.mode-div, .symbol-div, .game-div {
+	display: none;
+}
+
+.init-div .game-name {
+	display: block;
+	font: 30pt "Raleway", sans-serif; 
+}
+
+.div-head {
+	display: block;
+	font: 20pt "Raleway", sans-serif; 
+}
+
+.init-div .developer {
+	display: block;
+	font: 20pt "Lobster";
+	margin: 10px;
+}
+
+.btn {
+	background-color: rgb(30, 30, 30);
+	padding: 10px 20px;
+	margin-top: 15px;
+	border-radius: 5px;
+	font: 15pt "Raleway", sans-serif;
+	border: none;
+	color: rgb(250, 250, 250);
+	transition: all 800ms;
+}
+
+.oppn-btn, .oppn-btn {
+	margin-top: 20px;
+	width: 250px;
+}
+
+.symb-btn {
+	margin: 20px 40px;
+}
+
+.btn:hover {	
+	transform: scale(1.1);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.95);
+}
+
+.btn:active {
+	outline: none;
+	transform: scale(0.95);
+	box-shadow: none;
+}
+
+.btn:clicked {
+	outline: none;
+	transform: scale(1.0);
+	box-shadow: none;
+}
+
+.points, #reset-btn {
+	background-color: rgb(250, 250, 250);
+	color: rgb(0, 0, 0);
+	width: auto;
+}
+
+#reset-btn:hover, #reset-btn:active, #reset-btn:clicked, .points:hover, .points:active, .points:clicked {
+	transform: scale(1.0);
+}
+
+.game-div {
+	padding: 30px; 
+}
+
+.board {
+	margin: 20px auto;
+}
+
+.board-slot {
+	height: 120px;
+	width: 120px;
+	background-color: rgb(250, 250, 250);
+	color: rgb(0, 0, 0);
+	font: 32pt "Raleway";
+	border-radius: 10px;
+	border-color: rgb(70, 70, 70);
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+}

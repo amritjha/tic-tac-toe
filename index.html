@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>tic-tac-toe</title>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="main.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body>
+  	<div class="app-container">
+  		<div class="init-div">
+  			<span class="game-name">tic-tac-toe</span>
+  			<span class="developer">- Amrit Jha</span>
+  			<button class="btn" id="get-started-btn">Get started</button>
+  		</div>
+  		<!-- <div class="mode-div">
+  			<span class="div-head mode-qs">Choose your opponent</span>
+  			<button class="btn oppn-btn" id="COMPUTER">Play against computer</button><br>
+  			<button class="btn oppn-btn" id="HUMAN">Play against human</button>
+  		</div> -->
+  		<div class="symbol-div">
+  			<div class="temp-div-symbol">
+	  			<span class="div-head symbol-qs">What would you be this time?</span><br>
+	  			<button class="btn symb-btn" id="X">X</button>
+	  			<button class="btn symb-btn" id="O">O</button>
+  			</div>
+  		</div>
+  		<div class="game-div">
+  			<div class="points-div">
+  				<button class="btn points">You: <span id="pointsP1">0</span></button>
+  				<button class="btn" id="reset-btn">Restart</button>
+  				<button class="btn points">Computer: <span id="pointsP2">0</span></button>
+  			</div>
+  			<table class="board">
+  				<tr>
+  					<td class="board-slot" id="slot0"></td>
+  					<td class="board-slot" id="slot1"></td>
+  					<td class="board-slot" id="slot2"></td>
+  				</tr>
+  				<tr>
+  					<td class="board-slot" id="slot3"></td>
+  					<td class="board-slot" id="slot4"></td>
+  					<td class="board-slot" id="slot5"></td>
+  				</tr>
+  				<tr>
+  					<td class="board-slot" id="slot6"></td>
+  					<td class="board-slot" id="slot7"></td>
+  					<td class="board-slot" id="slot8"></td>
+  				</tr>
+  			</table>
+  		</div>
+  	</div>
+  </body>
+</html>
